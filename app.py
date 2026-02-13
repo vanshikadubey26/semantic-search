@@ -4,6 +4,9 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from sklearn.metrics.pairwise import cosine_similarity
 
+from fastapi.middleware.cors import CORSMiddleware
+
+
 app = FastAPI()
 
 docs = [
